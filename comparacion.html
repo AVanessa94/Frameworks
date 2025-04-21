@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparación: Bootstrap vs Tailwind</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tipografía y FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+  
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="title-area">
+      <h1><i class="fas fa-code-branch"></i> Bootstrap vs Tailwind</h1>
+      <p>Comparación completa entre los frameworks CSS más populares</p>
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html">Inicio</a>
+      <a href="ventajas.html">Ventajas</a>
+      <button id="btnEvaluacion">Evaluación</button>
+    </nav>
+  </div>
+</header>
+  
+
+  
+
+  <div class="container">
+
+    <h2>🔍 Comparación Detallada</h2>
+    <table>
+      <tr>
+        <th>Categoría</th>
+        <th>Bootstrap</th>
+        <th>Tailwind</th>
+      </tr>
+      <tr>
+        <td>Estilo de Diseño</td>
+        <td>Componentes con diseño definido</td>
+        <td>Clases utilitarias, diseño personalizado</td>
+      </tr>
+      <tr>
+        <td>Velocidad de desarrollo</td>
+        <td>Alta (componentes listos)</td>
+        <td>Media (más personalización)</td>
+      </tr>
+      <tr>
+        <td>Curva de Aprendizaje</td>
+        <td>Baja, ideal para principiantes</td>
+        <td>Media, requiere entender las utilidades</td>
+      </tr>
+      <tr>
+        <td>Flexibilidad</td>
+        <td>Limitada al estilo prediseñado</td>
+        <td>Alta, control total del diseño</td>
+      </tr>
+      <tr>
+        <td>Rendimiento</td>
+        <td>Peso considerable si no se optimiza</td>
+        <td>Ligero al usar purge</td>
+      </tr>
+      <tr>
+        <td>Popularidad</td>
+        <td>Muy usado en empresas y proyectos rápidos</td>
+        <td>Muy usado en proyectos modernos y startups</td>
+      </tr>
+      <tr>
+        <td>Diseño Responsivo</td>
+        <td>Clases específicas como `col-md-6`</td>
+        <td>Clases utilitarias como `md:w-1/2`</td>
+      </tr>
+      <tr>
+        <td>Customización</td>
+        <td>Se hace con Sass o sobrescribiendo estilos</td>
+        <td>Se hace directamente con clases</td>
+      </tr>
+      <tr>
+        <td>Tiempo para crear un diseño único</td>
+        <td>Más largo (hay que romper el estilo base)</td>
+        <td>Más corto (lo haces desde cero)</td>
+      </tr>
+      <tr>
+        <td>Uso en proyectos reales</td>
+        <td>Backends, dashboards, landings rápidas</td>
+        <td>Startups, apps personalizadas, portafolios</td>
+      </tr>
+      <tr>
+        <td>Documentación</td>
+        <td>Muy extensa y bien organizada</td>
+        <td>Muy completa y con ejemplos claros</td>
+      </tr>
+      <tr>
+        <td>Comunidad</td>
+        <td>Gigante y establecida</td>
+        <td>Muy activa y creciendo rápido</td>
+      </tr>
+    </table>
+
+    <div class="grid">
+      <div class="card">
+        <h2><i class="fab fa-bootstrap"></i> Bootstrap</h2>
+        <p>Bootstrap es un framework con componentes predefinidos como botones, menús y tarjetas. Ideal para desarrollo rápido sin preocuparte tanto por el diseño personalizado.</p>
+      </div>
+      <div class="card">
+        <h2><i class="fas fa-wind"></i> Tailwind</h2>
+        <p>Tailwind te da clases utilitarias para construir desde cero tu diseño. Más flexible, pero necesitas decidir todo tú mismo. Perfecto para diseños únicos.</p>
+      </div>
+    </div>
+
+  </div>
+<!-- Se conecta el quiz o evaluacion -->
+
+<section id="quiz" class="seccion" style="display: none;">
+  
+  
+  <h2>Quiz: ¿Qué tanto sabes sobre Bootstrap y Tailwind?</h2>
+  <form id="frameworkQuiz">
+    <div>
+      <p>1. ¿Cuál es el objetivo principal de Bootstrap?</p>
+      <label><input type="radio" name="q1" value="a"> Crear gráficos 3D</label><br>
+      <label><input type="radio" name="q1" value="b"> Estilizar con clases predefinidas</label><br>
+      <label><input type="radio" name="q1" value="c"> Editar bases de datos</label>
+    </div><br>
+
+    <div>
+      <p>2. ¿Tailwind CSS se basa en qué tipo de clases?</p>
+      <label><input type="radio" name="q2" value="a"> Utilitarias</label><br>
+      <label><input type="radio" name="q2" value="b"> Clases globales</label><br>
+      <label><input type="radio" name="q2" value="c"> JavaScript</label>
+    </div><br>
+
+    <div>
+      <p>3. ¿Qué clase de Bootstrap aplica un botón azul?</p>
+      <label><input type="radio" name="q3" value="a"> btn-light</label><br>
+      <label><input type="radio" name="q3" value="b"> btn-primary</label><br>
+      <label><input type="radio" name="q3" value="c"> btn-dark</label>
+    </div><br>
+
+    <button type="button" id="btnEnviar">Enviar respuestas</button>
+  </form>
+  <p id="resultado" style="margin-top: 20px; font-weight: bold;"></p>
+</section>
+
+<!-- Conectamos el script JS -->
+<script src="JS/evaluacion.js"></script>
+
+</body>
+</html>

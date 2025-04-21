@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ventajas y Desventajas de Frameworks CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <h1>Frameworks CSS</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="comparacion.html">Comparación</a>
+      <button id="btnEvaluacion"> Evaluación</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2><i class="fas fa-star"></i> Ventajas de usar Frameworks CSS</h2>
+    <section class="cards">
+      <div class="card">
+        <i class="fas fa-bolt"></i>
+        <h3>Desarrollo Rápido</h3>
+        <p>Los frameworks CSS permiten construir interfaces rápidamente sin escribir CSS desde cero.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-palette"></i>
+        <h3>Diseño Consistente</h3>
+        <p>Usan sistemas de diseño con estilos predefinidos que garantizan coherencia visual.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h3>Comunidad Activa</h3>
+        <p>Frameworks como Bootstrap y Tailwind tienen documentación clara y soporte continuo.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-tools"></i>
+        <h3>Fácil Mantenimiento</h3>
+        <p>Los estilos centralizados y las utilidades hacen que sea más fácil mantener grandes sitios web.</p>
+      </div>
+    </section>
+
+    <h2 style="margin-top: 4rem;"><i class="fas fa-exclamation-triangle"></i> Desventajas de usar Frameworks CSS</h2>
+    <section class="cards">
+      <div class="card desventaja">
+        <i class="fas fa-copy"></i>
+        <h3>Sitios Genéricos</h3>
+        <p>Bootstrap puede generar sitios genéricos si no se personaliza adecuadamente.</p>
+      </div>
+      <div class="card desventaja">
+        <i class="fas fa-clone"></i>
+        <h3>Repetición de Clases</h3>
+        <p>Tailwind puede generar clases repetitivas que dificultan la lectura.</p>
+      </div>
+      <div class="card desventaja">
+        <i class="fas fa-weight-hanging"></i>
+        <h3>Carga Innecesaria</h3>
+        <p>Bootstrap incluye muchos estilos que no siempre se usan, aumentando el peso del proyecto.</p>
+      </div>
+      <div class="card desventaja">
+        <i class="fas fa-brain"></i>
+        <h3>Curva de Aprendizaje</h3>
+        <p>Tailwind tiene una curva de aprendizaje más técnica si vienes de Bootstrap.</p>
+      </div>
+      <div class="card desventaja">
+        <i class="fas fa-book"></i>
+        <h3>Documentación Extensa</h3>
+        <p>Ambos frameworks requieren aprender su forma de hacer las cosas (documentación extra).</p>
+      </div>
+    </section>
+
+  
+  </main>
+  <!-- Se conecta el quiz o evaluacion -->
+
+  <section id="quiz" class="seccion" style="display: none;">
+  
+  
+    <h2>Quiz: ¿Qué tanto sabes sobre Bootstrap y Tailwind?</h2>
+    <form id="frameworkQuiz">
+      <div>
+        <p>1. ¿Cuál es el objetivo principal de Bootstrap?</p>
+        <label><input type="radio" name="q1" value="a"> Crear gráficos 3D</label><br>
+        <label><input type="radio" name="q1" value="b"> Estilizar con clases predefinidas</label><br>
+        <label><input type="radio" name="q1" value="c"> Editar bases de datos</label>
+      </div><br>
+  
+      <div>
+        <p>2. ¿Tailwind CSS se basa en qué tipo de clases?</p>
+        <label><input type="radio" name="q2" value="a"> Utilitarias</label><br>
+        <label><input type="radio" name="q2" value="b"> Clases globales</label><br>
+        <label><input type="radio" name="q2" value="c"> JavaScript</label>
+      </div><br>
+  
+      <div>
+        <p>3. ¿Qué clase de Bootstrap aplica un botón azul?</p>
+        <label><input type="radio" name="q3" value="a"> btn-light</label><br>
+        <label><input type="radio" name="q3" value="b"> btn-primary</label><br>
+        <label><input type="radio" name="q3" value="c"> btn-dark</label>
+      </div><br>
+  
+      <button type="button" id="btnEnviar">Enviar respuestas</button>
+    </form>
+    <p id="resultado" style="margin-top: 20px; font-weight: bold;"></p>
+  </section>
+  
+  <!-- Conectamos el script JS -->
+  <script src="JS/evaluacion.js"></script>
+</body>
+</html>
+

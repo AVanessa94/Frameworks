@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frameworks CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <h2>Frameworks CSS</h2>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="ventajas.html">Ventajas</a>
+      <a href="comparacion.html">Comparación</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Bienvenid@ a tu Guía de Frameworks CSS</h1>
+    <p>Explora los beneficios, diferencias y consideraciones clave de los frameworks más populares como Bootstrap y Tailwind CSS. Aprende cómo te pueden ayudar a crear sitios web modernos, eficientes y responsivos.</p>
+   <!--Botones , uno es diferente por lo de javascript  -->
+   
+    <div class="botones">
+      <a href="ventajas.html"><i class="fas fa-star"></i> Ver Ventajas</a>
+      <a href="comparacion.html"><i class="fas fa-code-compare"></i> Ver Comparación</a>
+    <button id="btnEvaluacion"><i class="fas fa-clipboard-check"></i> Ver Evaluación</button>
+
+    </div>
+
+  
+    <section class="video-section" style="text-align:center; margin: 2rem 0;">
+      <h2>Video sobre Frameworks CSS</h2>
+      <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+        <iframe src="https://www.youtube.com/embed/I4a-CyLFXfg" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                style="position:absolute; top:0; left:0; width:100%; height:100%;">
+        </iframe>
+      </div>
+    </section>
+    
+    
+<!--INFORMACION DE FRAMWEORKS  -->
+  <section class="info-section">
+    <h2 style="text-align:center;">¿Qué es un Framework CSS?</h2>
+    <p>
+      Un framework CSS es un conjunto de herramientas y estilos predefinidos que facilitan el diseño y desarrollo de páginas web. Permiten escribir menos código, mantener la consistencia visual y acelerar el proceso de maquetado.
+    </p>
+    <p>
+      <strong>Bootstrap</strong> ofrece componentes ya construidos y estilos listos para usar, lo que lo hace ideal para prototipos rápidos y diseño tradicional. Por otro lado, <strong>Tailwind CSS</strong> se basa en clases utilitarias que brindan un control total del diseño, permitiendo mayor personalización desde cero.
+    </p>
+    <p>
+      En este sitio encontrarás una comparación clara entre ambos enfoques, así como sus ventajas y desventajas, para que puedas elegir el que mejor se adapte a tu proyecto o estilo de trabajo.
+    </p>
+    <p>
+      Aunque los frameworks CSS pueden ahorrar tiempo, también pueden traer desafíos como el sobreuso de clases, estilos innecesarios, o una curva de aprendizaje técnica si vienes del CSS tradicional. Es importante conocer sus fortalezas y limitaciones para utilizarlos de forma eficiente.
+    </p>
+  </section>
+<!-- Se conecta el quiz o evaluacion -->
+
+  <section id="quiz" class="seccion" style="display: none;">
+  
+  
+    <h2>Quiz: ¿Qué tanto sabes sobre Bootstrap y Tailwind?</h2>
+    <form id="frameworkQuiz">
+      <div>
+        <p>1. ¿Cuál es el objetivo principal de Bootstrap?</p>
+        <label><input type="radio" name="q1" value="a"> Crear gráficos 3D</label><br>
+        <label><input type="radio" name="q1" value="b"> Estilizar con clases predefinidas</label><br>
+        <label><input type="radio" name="q1" value="c"> Editar bases de datos</label>
+      </div><br>
+  
+      <div>
+        <p>2. ¿Tailwind CSS se basa en qué tipo de clases?</p>
+        <label><input type="radio" name="q2" value="a"> Utilitarias</label><br>
+        <label><input type="radio" name="q2" value="b"> Clases globales</label><br>
+        <label><input type="radio" name="q2" value="c"> JavaScript</label>
+      </div><br>
+  
+      <div>
+        <p>3. ¿Qué clase de Bootstrap aplica un botón azul?</p>
+        <label><input type="radio" name="q3" value="a"> btn-light</label><br>
+        <label><input type="radio" name="q3" value="b"> btn-primary</label><br>
+        <label><input type="radio" name="q3" value="c"> btn-dark</label>
+      </div><br>
+  
+      <button type="button" id="btnEnviar">Enviar respuestas</button>
+    </form>
+    <p id="resultado" style="margin-top: 20px; font-weight: bold;"></p>
+  </section>
+  
+  <!-- Conectamos el script JS -->
+  <script src="JS/evaluacion.js"></script>
+  </body>
+  
+</body>
+</html>
